@@ -1,1 +1,3 @@
 # PRMapSelectorNG
+先行試作型PRMapSelectorNG
+デザイン等は最小限
