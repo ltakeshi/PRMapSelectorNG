@@ -65,20 +65,20 @@
   以下はpr_maps.yaml内のmapsizeを参照してフィルター用のclassをつけてます
   ぱっと見わかりやすいようにkmをつけてますけど無くてもいい気もしてる
  */
-        print ' '.$Maps[$key][mapsize].'km';
+        print ' '.$Maps[$key]['mapsize'].'km';
 /*
   以下のif三連発はpr_maps.yaml内の各マップのルールを参照してフィルター用のclassをつけてます
   ちょっと力業なのが玉に瑕なのでもう少し良いアプローチがあればそちらを採用したいところ
  */
-        if ( (in_array(1, $val[rules],true)) or (in_array(2, $val[rules],true)) or (in_array(3, $val[rules],true)) or (in_array(4, $val[rules],true)) ) {
+        if ( (in_array(1, $val['rules'],true)) or (in_array(2, $val['rules'],true)) or (in_array(3, $val['rules'],true)) or (in_array(4, $val['rules'],true)) ) {
           echo ' AAS';
         }
 
-        if ( (in_array(5, $val[rules],true)) or (in_array(6, $val[rules],true)) or (in_array(7, $val[rules],true)) or (in_array(8, $val[rules],true)) ) {
+        if ( (in_array(5, $val['rules'],true)) or (in_array(6, $val['rules'],true)) or (in_array(7, $val['rules'],true)) or (in_array(8, $val['rules'],true)) ) {
           echo ' INS';
         }
 
-        if ( (in_array(9, $val[rules],true)) or (in_array(10, $val[rules],true)) or (in_array(11, $val[rules],true)) or (in_array(12, $val[rules],true)) ) {
+        if ( (in_array(9, $val['rules'],true)) or (in_array(10, $val['rules'],true)) or (in_array(11, $val['rules'],true)) or (in_array(12, $val['rules'],true)) ) {
           echo ' C';
         }
 
@@ -87,12 +87,12 @@
   マップの画像を表示
   今後の課題として PRのlevels以下に存在してるpngを持ってきてサイズ変更等で表示するようにしたい
  */
-        print '      <img src="img/'.$key.'.jpg" alt="'.$Maps[$key][name].'"  />'."\n";
+        print '      <img src="img/'.$key.'.jpg" alt="'.$Maps[$key]['name'].'" width="240" height="135" />'."\n";
 /*
-  下のname=map[$key]はPOSTする際にmap[]変数に代入してます
+  下の'name'=map[$key]はPOSTする際にmap[]変数に代入してます
  */
         print '      <input type="checkbox" value="1" name="map['.$key.']" id="map_'.$key.'" />'."\n";
-        print '      '.($Maps[$key][name])."\n";
+        print '      '.($Maps[$key]['name'])."\n";
         print "       </div>\n";
         print "    </label>\n";
       }

@@ -27,14 +27,13 @@
       foreach ( array_keys($data) as $key ){
         print '<label for="map_'.$key.'">';
         print '<div class="element-item nbox">';
-        print '<img src="img/'.$key.'.jpg" alt="'.$Maps[$key][name].'"  />';
-        print ''.($Maps[$key][name]).'';
+        print '<img src="img/'.$key.'.jpg" alt="'.$Maps[$key]['name'].'" width="240" height="135" />';
+        print ''.($Maps[$key]['name']).'';
         print '<br />';
-        #    print '<select name="map_'.$key.'">';
         print '<select name="map[]">';
 
-        foreach( $Maps[$key][rules] as $num ){
-          print '<option value="'.$Maps[$key][name].' : '.$Rules[$num].'">'.$Rules[$num].'</option>';
+        foreach( $Maps[$key]['rules'] as $num ){
+          print '<option value="'.$Maps[$key]['name'].' : '.$Rules[$num].'">'.$Rules[$num].'</option>';
         }
 
         print '</select>';
