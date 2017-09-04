@@ -47,20 +47,20 @@
     <hr />
     <div class="grid">
 
-      <?php
+    <?php
       require_once "lib/Spyc.php";
 
       $Maps = Spyc::YAMLLoad('yaml/pr_maps.yaml');
       $Rules = Spyc::YAMLLoad('yaml/pr_rules.yaml');
 
       foreach ($Maps as $key => $val){
-        print '<label for="map_'.$key.'">';
+        print '    <label for="map_'.$key.'">'."\n";
 /*
   以下は並び替えやフィルタに使うclassをつけてます
   element-itemはソートやフィルタ用でnboxはcssでデザインに用いてます
   element-itemを変更する際はjs/main.js内の必要な箇所も書き換えるようにしてください
  */
-        print '<div class="element-item nbox';
+        print '        <div class="element-item nbox';
 /*
   以下はpr_maps.yaml内のmapsizeを参照してフィルター用のclassをつけてます
   ぱっと見わかりやすいようにkmをつけてますけど無くてもいい気もしてる
@@ -82,19 +82,19 @@
           echo ' C';
         }
 
-        print '">';
+        print '">'."\n";
 /*
   マップの画像を表示
   今後の課題として PRのlevels以下に存在してるpngを持ってきてサイズ変更等で表示するようにしたい
  */
-        print '<img src="img/'.$key.'.jpg" alt="'.$Maps[$key][name].'"  />';
+        print '      <img src="img/'.$key.'.jpg" alt="'.$Maps[$key][name].'"  />'."\n";
 /*
   下のname=map[$key]はPOSTする際にmap[]変数に代入してます
  */
-        print '    <input type="checkbox" value="1" name="map['.$key.']" id="map_'.$key.'" />';
-        print ''.($Maps[$key][name]).'';
-        print '</div>';
-        print '</label>';
+        print '      <input type="checkbox" value="1" name="map['.$key.']" id="map_'.$key.'" />'."\n";
+        print '      '.($Maps[$key][name])."\n";
+        print "       </div>\n";
+        print "    </label>\n";
       }
 
       ?>
