@@ -51,18 +51,18 @@ yaml/pr\_rules.yamlはYAML形式になっており、以下のフォーマット
 見れば分かるだろうから詳細は略。
 
 ### convert.php
-convert.phpは {PRインストールディレクトリ}\mods\pr\levels\*\info\ 以下にある拡張子はpng(実態はddsフォーマット)をjpgに変換するためのスクリプトです
-png/マップ名.pngをimg/マップ名.jpgに変換するスクリプトとなってます
+convert.phpは {PRインストールディレクトリ}\mods\pr\levels\*\info\ 以下にある拡張子はpng(実態はddsフォーマット)をjpgに変換するためのスクリプトです  
+png/マップ名.pngをimg/マップ名.jpgに変換するスクリプトとなってます  
 #### 使い方
-各マップの任意のloadbackground*.pngを``任意のマップ名.png"にリネームしてpngディレクトリ下に配置してください 
-配置が終了した後にconvert.phpにアクセスすると自動的にimgディレクトリ下に``任意のマップ名.jpg"に変換されて出力されます
+各マップの任意のloadbackground*.pngを"任意のマップ名.png"にリネームしてpngディレクトリ下に配置してください  
+配置が終了した後にconvert.phpにアクセスすると自動的にimgディレクトリ下に"任意のマップ名.jpg"に変換されて出力されます  
 
-なおマップ名はyaml/pr\_maps.yamlを参照します
-たとえばAl Basrahの場合はalbasrah.pngなどとしてください
+なおマップ名はyaml/pr\_maps.yamlを参照します  
+たとえばAl Basrahの場合はalbasrah.pngなどとしてください  
 
 #### 課題
 convert.phpで変換したjpgは一枚200kbほどあり、index.phpではそれが40枚ほど同時に読まれるので結構重たい
-今後のデザイン次第ではあるが、convert時に``解像度を落とす/クオリティを落とす"などした方がよいかも
+今後のデザイン次第ではあるが、convert時に"解像度を落とす/クオリティを落とす"などした方がよいかも  
 
 
 ## 既知の問題
