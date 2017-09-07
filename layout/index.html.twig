@@ -48,16 +48,16 @@
       <hr />
       <div class="grid">
 
-    {% for map in maps %}
-    <label for="map_{{map.mapid}}">
-      <div class="element-item nbox {{map.mapsize}}km {{map.AAS}} {{map.INS}} {{map.C}}">
-	<img src="img/{{map.mapid}}.jpg" alt="{{map.mapname}}" width="240" height="135" />
-	<input type="checkbox" value="1" name="map[{{map.mapid}}]" id="map_{{map.mapid}}" />
-	{{map.mapname}}
-      </div>
-    </label>
-    {% endfor %}
-
+	{% for map in maps %}
+	<label for="map_{{map.mapid}}">
+	  <div class="element-item nbox {{map.mapsize}}km {{map.AAS}} {{map.INS}} {{map.C}}">
+	    <img src="img/{{map.mapid}}.jpg" alt="{{map.mapname}}" width="240" height="135" />
+	    <input type="checkbox" value="1" name="map[{{map.mapid}}]" id="map_{{map.mapid}}" />
+	    {{map.mapname}}
+	  </div>
+	</label>
+	{% endfor %}
+	
     </form>
     <script src="js/main.js"></script>
   </body>
