@@ -30,7 +30,6 @@ foreach($keys as $key){
 
 $page = array(
     "maps" => $mapids_mapnames,
-    "key" => array_keys($Maps),
 );
 
 
