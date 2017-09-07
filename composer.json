@@ -1,5 +1,6 @@
 {
     "require": {
-	"mustangostang/spyc": "*"
+	"mustangostang/spyc": "*",
+	"twig/twig": "2.4.3"
     }
 }
