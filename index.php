@@ -48,7 +48,7 @@
     <div class="grid">
 
     <?php
-      require_once "lib/Spyc.php";
+      require_once "vendor/autoload.php";
 
       $Maps = Spyc::YAMLLoad('yaml/pr_maps.yaml');
       $Rules = Spyc::YAMLLoad('yaml/pr_rules.yaml');
