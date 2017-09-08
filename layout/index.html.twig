@@ -5,9 +5,7 @@
     <title>PRMapSelectorNG</title>
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-
     <link rel="stylesheet" href="pr_map_selector.css">
-
   </head>
   <body>
     <h1>先行試作型PRMapSelectorNG</h1>
@@ -40,14 +38,12 @@
     </div> <!-- end filters -->
 
     <hr />
-
     <form action="select.php" method="post">
       <input type="hidden" name="" />
       <input type="submit" name="commit" value="ルールを選択する" />
 
       <hr />
       <div class="grid">
-
 	{% for map in maps %}
 	<label for="map_{{map.mapid}}">
 	  <div class="element-item nbox {{map.mapsize}}km {{map.AAS}} {{map.INS}} {{map.C}}">
@@ -57,7 +53,6 @@
 	  </div>
 	</label>
 	{% endfor %}
-	
     </form>
     <script src="js/main.js"></script>
   </body>

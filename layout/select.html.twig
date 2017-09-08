@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>PRMapSelectorNG</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <link rel="stylesheet" href="pr_map_selector.css">
+  </head>
+  <body>
+    <form action="result.php" method="post">
+      <input type="hidden" name="" />
+      <input type="submit" name="commit" value="ルールを選択する" />
+      <div class="grid">
+	{% for data in datas %}
+	<label for="map_{{data.mapid}}">
+	  <div class="element-item nbox">
+	    <img src="img/{{data.mapid}}.jpg" alt="{{data.mapname}}" width="240" height="135" />
+	    {{data.mapname}}
+	    <br />
+	    <select name="map[]">
+	      {% for rule in data.rules  %}
+	      <option value="{{data.mapname}} : {{rule}}">{{rule}}</option>
+	      {% endfor %}
+	    </select>
+	  </div>
+	</label>
+	{% endfor %}
+      </div>
+    </form>
+    <script src="js/main.js"></script>
+</bod>
+</html>
