@@ -7,6 +7,17 @@ $(function() {
     ).trigger('change');
 });
 
+$("input[type='checkbox']").change(function () {//チェックボックスの内容が変更されたとき。
+    if ($(".checkbox:checked").length >= 1) {//チェックされているチェックボックスが1つ以上あれば
+	$("#send").prop("disabled", false);//送信ボタンを有効化する。
+    } else {
+	$("#send").prop("disabled", true);//送信ボタンを無効化する。
+    }
+});
+
+/*
+  以下isotope設定用
+ */
 var $grid = $('.grid').isotope({
     itemSelector: '.element-item'
 });

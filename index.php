@@ -42,7 +42,7 @@
 
   <form action="select.php" method="post">
     <input type="hidden" name="" />
-    <input type="submit" name="commit" value="ルールを選択する" />
+    <input type="submit" name="send" id="send" value="ルールを選択する" />
 
     <hr />
     <div class="grid">
@@ -91,7 +91,7 @@
 /*
   下の'name'=map[$key]はPOSTする際にmap[]変数に代入してます
  */
-        print '      <input type="checkbox" value="1" name="map['.$key.']" id="map_'.$key.'" />'."\n";
+        print '      <input type="checkbox" class="checkbox" value="1" name="map['.$key.']" id="map_'.$key.'" />'."\n";
         print '      '.($Maps[$key]['name'])."\n";
         print "       </div>\n";
         print "    </label>\n";
