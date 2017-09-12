@@ -50,15 +50,22 @@ yaml/pr\_rules.yamlはYAML形式になっており、以下のフォーマット
 </pre>
 見れば分かるだろうから詳細は略。
 
-### convert.php
+### convert.php 及び bin/filecp.bat
 convert.phpは {PRインストールディレクトリ}\mods\pr\levels\*\info\ 以下にある拡張子はpng(実態はddsフォーマット)をjpgに変換するためのスクリプトです  
-png/マップ名.pngをimg/マップ名.jpgに変換するスクリプトとなってます  
-#### 使い方
-各マップの任意のloadbackground*.pngを"任意のマップ名.png"にリネームしてpngディレクトリ下に配置してください  
-配置が終了した後にconvert.phpにアクセスすると自動的にimgディレクトリ下に"任意のマップ名.jpg"に変換されて出力されます  
+pngディレクトリ下にあるファイルをjpgに変換すると同時にファイル名を適切な物に変更するスクリプトです
 
-なおマップ名はyaml/pr\_maps.yamlを参照します  
-たとえばAl Basrahの場合はalbasrah.pngなどとしてください  
+bin/filecp.batは {PRインストールディレクトリ}\mods\pr\levels\*\info\ 以下にあるloadbackground{1-4}.pngなファイルをコピーするプログラムです
+コピー先は {PRインストールディレクトリ}\mods\pr\levels\pr\になっており、コピーすると同時にファイル名をマップ名{1-4}.pngに変更します
+
+#### 使い方
+1) filecp.batを {PRインストールディレクトリ}\mods\pr\levels\ にコピーする
+2) filecp.batをダブルクリック(管理者権限を要求される可能性あり)
+3) {PRインストールディレクトリ}\mods\pr\levels\ 下にあるprという名前のフォルダ内にあるpngファイルをサーバーの該当ディレクトリにアップロード
+4) PRMapSelectorNGにアクセス
+5) URLの末尾をconvert.phpに書き換えてアクセス
+6) jpgディレクトリ内にある好きな画像をimgディレクトリにコピー(各マップ1枚)
+7) imgディレクトリにコピーする際にマップ名最後についてる1～4の数字は消しておくこと(例: albasrah1.jpgを使う場合はalbasrah.jpgに変更する)
+
 
 #### 課題
 convert.phpで変換したjpgは一枚200kbほどあり、index.phpではそれが40枚ほど同時に読まれるので結構重たい
