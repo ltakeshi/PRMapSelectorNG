@@ -10,10 +10,8 @@ asadkhal:
   name: Asad Khal
   mapsize: 1
   rules: 
-    - 1
     - 2
     - 3
-    - 4
 
 assaultongrozny:
   name: Assault on Grozny
@@ -22,15 +20,14 @@ assaultongrozny:
     - 1
     - 2
     - 3
-    - 4
     - 7
 
 assaultonmestia:
   name: Assault on Mestia
   mapsize: 1
   rules:
+    - 1
     - 3
-    - 4
     
 bamyan:
   name: Bamyan
@@ -48,17 +45,15 @@ battleofiadrang:
     - 1
     - 2
     - 3
-    - 4
-    - 9
+    - 10
+    - 11
 
 beirut:
   name: Beirut
   mapsize: 2
   rules:
     - 1
-    - 2
     - 3
-    - 4
 
 bijarcanyons:
   name: Bijar Canyons
@@ -67,7 +62,9 @@ bijarcanyons:
     - 1
     - 2
     - 3
-    - 4
+    - 7
+    - 9
+    - 10
     - 11
 
 blackgold:
@@ -77,7 +74,6 @@ blackgold:
     - 1
     - 2
     - 3
-    - 4
     - 7
     - 9
     - 10
@@ -88,15 +84,14 @@ burningsands:
   mapsize: 4
   rules:
     - 1
+    - 2
     - 3
-    - 4
 
 charliespoint:
-  name: 'Charlie''s Point'
+  name: 'Charlies Point'
   mapsize: 2
   rules: 
     - 3
-    - 4
 
 dovre:
   name: Dovre
@@ -105,24 +100,22 @@ dovre:
     - 1
     - 2
     - 3
-    - 4
 
 dovre_winter:
-  name: Dovre (Winter)
+  name: Dovre Winter
   mapsize: 2
   rules:
     - 1
     - 2
     - 3
-    - 4
 
 dragonfly:
   name: Dragon Fly
   mapsize: 2
   rules:
     - 1
+    - 2
     - 3
-    - 4
     - 5
     - 7
     - 9
@@ -133,6 +126,7 @@ fallujahwest:
   mapsize: 1
   rules:
     - 5
+    - 6
     - 7
 
 foolsroad:
@@ -142,19 +136,19 @@ foolsroad:
     - 1
     - 2
     - 3
-    - 4
     - 9
     - 10
     - 11
     
-gazabeach:
-  name: Gaza Beach
+gaza:
+  name: Gaza
   mapsize: 1
   rules:
     - 1
+    - 2
     - 3
-    - 4
     - 5
+    - 6
     - 7
     
 goosegreen:
@@ -164,37 +158,35 @@ goosegreen:
     - 1
     - 2
     - 3
-    - 4
     
 hadespeak:
   name: Hades Peak
   mapsize: 4
   rules: 
+    - 1
     - 2
     - 3
-    - 4
+    - 9
     - 10
     - 11
-    - 12
 
 hill488:
   name: Hill 488
   mapsize: 1
   rules:
-    - 1
     - 3
-    - 4
 
 ironridge:
   name: Iron Ridge
   mapsize: 2
   rules:
     - 1
+    - 2
     - 3
-    - 5
-    - 6
     - 7
     - 9
+    - 10
+    - 11
 
 jabalalburj:
   name: Jabal Al Burj
@@ -203,7 +195,6 @@ jabalalburj:
     - 1
     - 2
     - 3
-    - 4
 
 karbala:
   name: Karbala
@@ -212,6 +203,7 @@ karbala:
     - 5
     - 6
     - 7
+    - 8
 
 kashandesert:
   name: Kashan Desert
@@ -221,6 +213,8 @@ kashandesert:
     - 2
     - 3
     - 4
+    - 9
+    - 10
     - 11
 
 khamisiyah:
@@ -249,9 +243,6 @@ korengalvalley:
   mapsize: 1
   rules:
     - 3
-    - 4
-    - 5
-    - 6
     - 7
 
 kozelsk:
@@ -261,7 +252,6 @@ kozelsk:
     - 1
     - 2
     - 3
-    - 4
     - 7
 
 lashkarvalley:
@@ -278,7 +268,6 @@ muttrahcity:
     - 1
     - 2
     - 3
-    - 4
 
 nuijamaa:
   name: Nuijamaa
@@ -287,7 +276,6 @@ nuijamaa:
     - 1
     - 2
     - 3
-    - 4
 
 operationarcher:
   name: Operation Archer
@@ -301,17 +289,24 @@ operationbarracuda:
   name: Operation Barracuda
   mapsize: 2
   rules:
+    - 1
     - 2
     - 3
-    - 4
-
+    
+operationfalcon:
+  name: Operation Falcon - BETA
+  mapsize: 2
+  rules:
+    - 1
+    - 2
+    - 3
+    
 operationghosttrain:
   name: Operation Ghost Train
   mapsize: 1
   rules:
     - 1
     - 3
-    - 4
 
 operationmarlin:
   name: Operation Marlin
@@ -320,8 +315,6 @@ operationmarlin:
     - 1
     - 2
     - 3
-    - 4
-    - 6
     - 7
 
 operationsoulrebel:
@@ -330,8 +323,22 @@ operationsoulrebel:
   rules:
     - 1
     - 3
-    - 4
 
+operationthunder:
+  name: Operation Thunder - BETA
+  mapsize: 4
+  rules:
+    - 2
+    - 3
+
+outpost:
+  name: Outpost
+  mapsize: 2
+  rules:
+    - 2
+    - 3
+    - 7
+    
 pavlovskbay:
   name: Pavlovsk Bay
   mapsize: 4
@@ -339,7 +346,6 @@ pavlovskbay:
     - 1
     - 2
     - 3
-    - 4
 
 qwairiver:
   name: Qwai River
@@ -348,18 +354,23 @@ qwairiver:
     - 1
     - 2
     - 3
-    - 4
 
 ramiel:
   name: Ramiel
   mapsize: 2
   rules:
     - 3
-    - 4
     - 5
     - 6
     - 7
 
+routee106:
+  name: Route E-106
+  mapsize: 2
+  rules:
+    - 3
+    - 11
+    
 saaremaa:
   name: Saaremaa
   mapsize: 4
@@ -372,15 +383,34 @@ saaremaa:
     - 10
     - 11
 
+sahel:
+  name: Sahel
+  mapsize: 2
+  rules:
+    - 1
+    - 2
+    - 3
+    - 7
+    
 sbenehoutskirts:
   name: Sbeneh Outskirts
   mapsize: 2
   rules:
+    - 1
     - 3
-    - 4
+    - 5
     - 6
     - 7
+    - 9
+    - 11
 
+shahadah:
+  name: Shahadah
+  mapsize: 2
+  rules:
+    - 3
+    - 7
+    
 shijiavalley:
   name: Shijia Valley
   mapsize: 4
@@ -388,8 +418,8 @@ shijiavalley:
     - 1
     - 2
     - 3
-    - 4
     - 9
+    - 10
     - 11
 
 silenteagle:
@@ -399,16 +429,17 @@ silenteagle:
     - 1
     - 2
     - 3
-    - 4
+    - 9
+    - 10
     - 11
 
 tadsaeoffensive:
   name: Tad Sae Offensive
   mapsize: 1
   rules:
+    - 1
     - 2
     - 3
-    - 4
     
 thefalklands:
   name: The Falklands
@@ -417,7 +448,6 @@ thefalklands:
     - 1
     - 2
     - 3
-    - 4
     
 ulyanovsk:
   name: Ulyanovsk
@@ -426,7 +456,6 @@ ulyanovsk:
     - 1
     - 2
     - 3
-    - 4
 
 vadsocity:
   name: Vadso City
@@ -435,7 +464,6 @@ vadsocity:
     - 1
     - 2
     - 3
-    - 4
     - 9
     - 10
     - 11
@@ -447,16 +475,18 @@ wandashan:
     - 1
     - 2
     - 3
-    - 4
     - 11
     
 xiangshan:
   name: Xiangshan
   mapsize: 4
   rules:
+    - 1
     - 2
     - 3
-    - 4
+    - 9
+    - 10
+    - 11
 
 yamalia:
   name: Yamalia
@@ -465,6 +495,6 @@ yamalia:
     - 1
     - 2
     - 3
-    - 4
     - 9
+    - 10
     - 11
