@@ -10,7 +10,7 @@
 
 </head>
 <body>
-  <h1>先行試作型PRMapSelectorNG</h1>
+  <h1>PRMapSelectorNG</h1>
   <div class="filters">
 
     <div class="ui-group">
