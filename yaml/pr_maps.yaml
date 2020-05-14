@@ -26,7 +26,6 @@ assaultonmestia:
   name: Assault on Mestia
   mapsize: 1
   rules:
-    - 1
     - 3
     
 bamyan:
@@ -74,11 +73,20 @@ blackgold:
     - 1
     - 2
     - 3
+    - 4
     - 7
     - 9
     - 10
     - 11
+    - 12
 
+brecourtassault:
+  name: Brecourt Assault
+  mapsize: 2
+  rules:
+    - 2
+    - 3
+    
 burningsands:
   name: Burning Sands
   mapsize: 4
@@ -87,6 +95,14 @@ burningsands:
     - 2
     - 3
 
+carentan:
+  name: Carentan
+  mapsize: 2
+  rules:
+    - 2
+    - 3
+    - 4
+    
 charliespoint:
   name: 'Charlies Point'
   mapsize: 2
@@ -119,12 +135,14 @@ dragonfly:
     - 5
     - 7
     - 9
+    - 10
     - 11
     
 fallujahwest:
   name: Fallujah West
   mapsize: 1
   rules:
+    - 3
     - 5
     - 6
     - 7
@@ -148,7 +166,6 @@ gaza:
     - 2
     - 3
     - 5
-    - 6
     - 7
     
 goosegreen:
@@ -196,6 +213,15 @@ jabalalburj:
     - 2
     - 3
 
+kafrhalab:
+  name: Kafr Halab - BETA
+  mapsize: 2
+  rules:
+    - 1
+    - 2
+    - 3
+    - 7
+    
 karbala:
   name: Karbala
   mapsize: 2
@@ -261,6 +287,14 @@ lashkarvalley:
     - 5
     - 7
 
+merville:
+  name: Merville
+  mapsize: 1
+  rules:
+    - 1
+    - 2
+    - 3
+
 muttrahcity:
   name: Muttrah City
   mapsize: 2
@@ -277,6 +311,16 @@ nuijamaa:
     - 2
     - 3
 
+
+omahabeach:
+  name: Omaha Beach
+  mapsize: 2
+  rules:
+    - 1
+    - 2
+    - 3
+    - 4
+    
 operationarcher:
   name: Operation Archer
   mapsize: 2
@@ -294,12 +338,13 @@ operationbarracuda:
     - 3
     
 operationfalcon:
-  name: Operation Falcon - BETA
+  name: Operation Falcon
   mapsize: 2
   rules:
     - 1
     - 2
     - 3
+    - 4
     
 operationghosttrain:
   name: Operation Ghost Train
@@ -364,6 +409,14 @@ ramiel:
     - 6
     - 7
 
+reichswald:
+  name: Reichswald
+  mapsize: 1
+  rules:
+    - 1
+    - 2
+    - 3
+    
 routee106:
   name: Route E-106
   mapsize: 2
@@ -397,6 +450,7 @@ sbenehoutskirts:
   mapsize: 2
   rules:
     - 1
+    - 2
     - 3
     - 5
     - 6
@@ -465,7 +519,6 @@ vadsocity:
     - 2
     - 3
     - 9
-    - 10
     - 11
 
 wandashan:
@@ -475,6 +528,8 @@ wandashan:
     - 1
     - 2
     - 3
+    - 9
+    - 10
     - 11
     
 xiangshan:
